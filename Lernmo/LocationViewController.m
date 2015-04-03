@@ -37,7 +37,7 @@
 #pragma mark - Helper functions
 -(void)presentSuccessAlertView
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Your sessions has been booked and you'll be notified an hour before the lesson begins!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Your session has been booked and you'll be notified an hour before the lesson begins!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
     [alertView show];
 }
 

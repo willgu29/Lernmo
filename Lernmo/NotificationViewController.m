@@ -18,6 +18,10 @@
     [super viewDidLoad];
     self.title = @"Notifications";
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

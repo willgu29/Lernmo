@@ -40,7 +40,7 @@
 }
 -(IBAction)notifications:(UIButton *)sender
 {
-    NotificationViewController *notificationsVC = [[NotificationViewController alloc] initWithNibName:@"NotificationsViewController" bundle:nil];
+    NotificationViewController *notificationsVC = [[NotificationViewController alloc] initWithNibName:@"NotificationViewController" bundle:nil];
     [self.navigationController pushViewController:notificationsVC animated:YES];
 }
 #pragma mark - UITableView Delegate
