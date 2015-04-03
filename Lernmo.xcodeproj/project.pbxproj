@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841D46C21ACF2DE30062C233 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D46C11ACF2DE30062C233 /* main.m */; };
+		841D46C51ACF2DE30062C233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D46C41ACF2DE30062C233 /* AppDelegate.m */; };
+		841D46CD1ACF2DE30062C233 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D46CC1ACF2DE30062C233 /* Images.xcassets */; };
+		841D46DC1ACF2DE30062C233 /* LernmoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D46DB1ACF2DE30062C233 /* LernmoTests.m */; };
+		841D46EF1ACF2EDD0062C233 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D46EC1ACF2EDD0062C233 /* Converter.m */; };
+		841D46F01ACF2EDD0062C233 /* NSDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D46EE1ACF2EDD0062C233 /* NSDataConvert.m */; };
+		841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D46F21ACF2F840062C233 /* LoginViewController.m */; };
+		841D46F51ACF2F840062C233 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D46F31ACF2F840062C233 /* LoginViewController.xib */; };
+		841D46F91ACF2FA80062C233 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D46F71ACF2FA80062C233 /* ParseFacebookUtils.framework */; };
+		841D46FA1ACF2FA80062C233 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D46F81ACF2FA80062C233 /* Parse.framework */; };
+		841D47011ACF30220062C233 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47001ACF30220062C233 /* Router.m */; };
+		841D47061ACF30470062C233 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47041ACF30470062C233 /* SearchViewController.m */; };
+		841D47071ACF30470062C233 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D47051ACF30470062C233 /* SearchViewController.xib */; };
+		841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D470A1ACF30C90062C233 /* ViewUserProfileViewController.m */; };
+		841D470D1ACF30C90062C233 /* ViewUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D470B1ACF30C90062C233 /* ViewUserProfileViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841D46D61ACF2DE30062C233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841D46B41ACF2DE30062C233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841D46BB1ACF2DE30062C233;
+			remoteInfo = Lernmo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841D46BC1ACF2DE30062C233 /* Lernmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lernmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841D46C01ACF2DE30062C233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841D46C11ACF2DE30062C233 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		841D46C31ACF2DE30062C233 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		841D46C41ACF2DE30062C233 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		841D46CC1ACF2DE30062C233 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		841D46D51ACF2DE30062C233 /* LernmoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LernmoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841D46DA1ACF2DE30062C233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841D46DB1ACF2DE30062C233 /* LernmoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LernmoTests.m; sourceTree = "<group>"; };
+		841D46EB1ACF2EDD0062C233 /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		841D46EC1ACF2EDD0062C233 /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
+		841D46ED1ACF2EDD0062C233 /* NSDataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataConvert.h; sourceTree = "<group>"; };
+		841D46EE1ACF2EDD0062C233 /* NSDataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataConvert.m; sourceTree = "<group>"; };
+		841D46F11ACF2F840062C233 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		841D46F21ACF2F840062C233 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		841D46F31ACF2F840062C233 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		841D46F71ACF2FA80062C233 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		841D46F81ACF2FA80062C233 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		841D46FC1ACF2FCE0062C233 /* ParseUserValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseUserValues.h; sourceTree = "<group>"; };
+		841D46FD1ACF2FDC0062C233 /* NSUserDefaultValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultValues.h; sourceTree = "<group>"; };
+		841D46FF1ACF30220062C233 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		841D47001ACF30220062C233 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		841D47031ACF30470062C233 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		841D47041ACF30470062C233 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		841D47051ACF30470062C233 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		841D47091ACF30C90062C233 /* ViewUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUserProfileViewController.h; sourceTree = "<group>"; };
+		841D470A1ACF30C90062C233 /* ViewUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUserProfileViewController.m; sourceTree = "<group>"; };
+		841D470B1ACF30C90062C233 /* ViewUserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewUserProfileViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841D46B91ACF2DE30062C233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841D46FA1ACF2FA80062C233 /* Parse.framework in Frameworks */,
+				841D46F91ACF2FA80062C233 /* ParseFacebookUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841D46D21ACF2DE30062C233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841D46B31ACF2DE30062C233 = {
+			isa = PBXGroup;
+			children = (
+				841D46BE1ACF2DE30062C233 /* Lernmo */,
+				841D46D81ACF2DE30062C233 /* LernmoTests */,
+				841D46BD1ACF2DE30062C233 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841D46BD1ACF2DE30062C233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841D46BC1ACF2DE30062C233 /* Lernmo.app */,
+				841D46D51ACF2DE30062C233 /* LernmoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841D46BE1ACF2DE30062C233 /* Lernmo */ = {
+			isa = PBXGroup;
+			children = (
+				841D47081ACF30BD0062C233 /* UserInterface */,
+				841D47021ACF30340062C233 /* SearchInterface */,
+				841D46FE1ACF301A0062C233 /* APIs */,
+				841D46FB1ACF2FC10062C233 /* Constants */,
+				841D46F61ACF2F9A0062C233 /* External */,
+				841D46EA1ACF2ED10062C233 /* Converters */,
+				841D46C31ACF2DE30062C233 /* AppDelegate.h */,
+				841D46C41ACF2DE30062C233 /* AppDelegate.m */,
+				841D46CC1ACF2DE30062C233 /* Images.xcassets */,
+				841D46BF1ACF2DE30062C233 /* Supporting Files */,
+				841D46F11ACF2F840062C233 /* LoginViewController.h */,
+				841D46F21ACF2F840062C233 /* LoginViewController.m */,
+				841D46F31ACF2F840062C233 /* LoginViewController.xib */,
+			);
+			path = Lernmo;
+			sourceTree = "<group>";
+		};
+		841D46BF1ACF2DE30062C233 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841D46C01ACF2DE30062C233 /* Info.plist */,
+				841D46C11ACF2DE30062C233 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841D46D81ACF2DE30062C233 /* LernmoTests */ = {
+			isa = PBXGroup;
+			children = (
+				841D46DB1ACF2DE30062C233 /* LernmoTests.m */,
+				841D46D91ACF2DE30062C233 /* Supporting Files */,
+			);
+			path = LernmoTests;
+			sourceTree = "<group>";
+		};
+		841D46D91ACF2DE30062C233 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841D46DA1ACF2DE30062C233 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841D46EA1ACF2ED10062C233 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				841D46EB1ACF2EDD0062C233 /* Converter.h */,
+				841D46EC1ACF2EDD0062C233 /* Converter.m */,
+				841D46ED1ACF2EDD0062C233 /* NSDataConvert.h */,
+				841D46EE1ACF2EDD0062C233 /* NSDataConvert.m */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		841D46F61ACF2F9A0062C233 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				841D46F71ACF2FA80062C233 /* ParseFacebookUtils.framework */,
+				841D46F81ACF2FA80062C233 /* Parse.framework */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		841D46FB1ACF2FC10062C233 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				841D46FD1ACF2FDC0062C233 /* NSUserDefaultValues.h */,
+				841D46FC1ACF2FCE0062C233 /* ParseUserValues.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		841D46FE1ACF301A0062C233 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				841D46FF1ACF30220062C233 /* Router.h */,
+				841D47001ACF30220062C233 /* Router.m */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		841D47021ACF30340062C233 /* SearchInterface */ = {
+			isa = PBXGroup;
+			children = (
+				841D47031ACF30470062C233 /* SearchViewController.h */,
+				841D47041ACF30470062C233 /* SearchViewController.m */,
+				841D47051ACF30470062C233 /* SearchViewController.xib */,
+			);
+			name = SearchInterface;
+			sourceTree = "<group>";
+		};
+		841D47081ACF30BD0062C233 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				841D47091ACF30C90062C233 /* ViewUserProfileViewController.h */,
+				841D470A1ACF30C90062C233 /* ViewUserProfileViewController.m */,
+				841D470B1ACF30C90062C233 /* ViewUserProfileViewController.xib */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841D46BB1ACF2DE30062C233 /* Lernmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841D46DF1ACF2DE30062C233 /* Build configuration list for PBXNativeTarget "Lernmo" */;
+			buildPhases = (
+				841D46B81ACF2DE30062C233 /* Sources */,
+				841D46B91ACF2DE30062C233 /* Frameworks */,
+				841D46BA1ACF2DE30062C233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lernmo;
+			productName = Lernmo;
+			productReference = 841D46BC1ACF2DE30062C233 /* Lernmo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		841D46D41ACF2DE30062C233 /* LernmoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841D46E21ACF2DE30062C233 /* Build configuration list for PBXNativeTarget "LernmoTests" */;
+			buildPhases = (
+				841D46D11ACF2DE30062C233 /* Sources */,
+				841D46D21ACF2DE30062C233 /* Frameworks */,
+				841D46D31ACF2DE30062C233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841D46D71ACF2DE30062C233 /* PBXTargetDependency */,
+			);
+			name = LernmoTests;
+			productName = LernmoTests;
+			productReference = 841D46D51ACF2DE30062C233 /* LernmoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841D46B41ACF2DE30062C233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "William Gu";
+				TargetAttributes = {
+					841D46BB1ACF2DE30062C233 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					841D46D41ACF2DE30062C233 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 841D46BB1ACF2DE30062C233;
+					};
+				};
+			};
+			buildConfigurationList = 841D46B71ACF2DE30062C233 /* Build configuration list for PBXProject "Lernmo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841D46B31ACF2DE30062C233;
+			productRefGroup = 841D46BD1ACF2DE30062C233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841D46BB1ACF2DE30062C233 /* Lernmo */,
+				841D46D41ACF2DE30062C233 /* LernmoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841D46BA1ACF2DE30062C233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841D470D1ACF30C90062C233 /* ViewUserProfileViewController.xib in Resources */,
+				841D46F51ACF2F840062C233 /* LoginViewController.xib in Resources */,
+				841D46CD1ACF2DE30062C233 /* Images.xcassets in Resources */,
+				841D47071ACF30470062C233 /* SearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841D46D31ACF2DE30062C233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841D46B81ACF2DE30062C233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841D46F01ACF2EDD0062C233 /* NSDataConvert.m in Sources */,
+				841D46C51ACF2DE30062C233 /* AppDelegate.m in Sources */,
+				841D46EF1ACF2EDD0062C233 /* Converter.m in Sources */,
+				841D46C21ACF2DE30062C233 /* main.m in Sources */,
+				841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */,
+				841D47011ACF30220062C233 /* Router.m in Sources */,
+				841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */,
+				841D47061ACF30470062C233 /* SearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841D46D11ACF2DE30062C233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841D46DC1ACF2DE30062C233 /* LernmoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841D46D71ACF2DE30062C233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841D46BB1ACF2DE30062C233 /* Lernmo */;
+			targetProxy = 841D46D61ACF2DE30062C233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		841D46DD1ACF2DE30062C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		841D46DE1ACF2DE30062C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841D46E01ACF2DE30062C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lernmo",
+				);
+				INFOPLIST_FILE = Lernmo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		841D46E11ACF2DE30062C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lernmo",
+				);
+				INFOPLIST_FILE = Lernmo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		841D46E31ACF2DE30062C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LernmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lernmo.app/Lernmo";
+			};
+			name = Debug;
+		};
+		841D46E41ACF2DE30062C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LernmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lernmo.app/Lernmo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841D46B71ACF2DE30062C233 /* Build configuration list for PBXProject "Lernmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841D46DD1ACF2DE30062C233 /* Debug */,
+				841D46DE1ACF2DE30062C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841D46DF1ACF2DE30062C233 /* Build configuration list for PBXNativeTarget "Lernmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841D46E01ACF2DE30062C233 /* Debug */,
+				841D46E11ACF2DE30062C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		841D46E21ACF2DE30062C233 /* Build configuration list for PBXNativeTarget "LernmoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841D46E31ACF2DE30062C233 /* Debug */,
+				841D46E41ACF2DE30062C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841D46B41ACF2DE30062C233 /* Project object */;
+}
