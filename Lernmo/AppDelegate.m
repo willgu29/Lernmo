@@ -11,12 +11,8 @@
 #import <Parse/Parse.h>
 #import "NSDataConvert.h"
 #import "ParseUserValues.h"
-#import <ParseFacebookUtils/PFFacebookUtils.h>
-#import <FacebookSDK/FacebookSDK.h>
 #import "NSUserDefaultValues.h"
 #import "Router.h"
-#import "Location.h"
-
 @interface AppDelegate ()
 
 @end
@@ -27,10 +23,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setupParse:application withLaunchOptions:launchOptions];
-    [self linkParseWithFacebook];
     [self setupPushNotifications:application];
     [self setupWindowWithRootViewController:[self getRootViewController]];
-    [self getUserLocation];
     return YES;
 }
 
@@ -66,8 +60,8 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     
     // Logs 'install' and 'app activate' App Events.
-    [FBAppEvents activateApp];
-    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+//    [FBSDKAppEvents activateApp];
+//    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -80,22 +74,14 @@
          annotation:(id)annotation {
     
     // attempt to extract a token from the url
-    return [FBAppCall handleOpenURL:url
-                  sourceApplication:sourceApplication
-                        withSession:[PFFacebookUtils session]];
+    return NO;
+
 }
 
 #pragma mark - Helper functions
 
--(void)getUserLocationCoordinates
-{
-    //TODO: Get user location coordinates
-}
 
--(void)linkParseWithFacebook
-{
-    [PFFacebookUtils initializeFacebook];
-}
+
 
 -(void)saveDeviceTokenToParseAndUserDefaults:(NSData *)deviceToken
 {
@@ -107,8 +93,8 @@
 -(void)setupParse:(UIApplication *)application withLaunchOptions:(NSDictionary *)lauchOptions
 {
     [Parse enableLocalDatastore];
-    [Parse setApplicationId:@"jZU7AQ02iAtDhPQlZt21V4PW0nFpAm3QhLAC77Zq"
-                  clientKey:@"m6qGTPDhpIg371cdMtMnaC73F0ZcB6CKKnp9I9uk"];
+    [Parse setApplicationId:@"xeNfFzeyDk0PLtcpBKSHRsgtHE5LQU862xKIw8Ax"
+                  clientKey:@"jiYr5tS30lnmPv8qlIqFgGiZy5FOuSHS7EAGCbMJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:lauchOptions];
     
 }
