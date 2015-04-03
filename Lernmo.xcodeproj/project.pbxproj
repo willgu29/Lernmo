@@ -35,6 +35,14 @@
 		841D47291ACF3D830062C233 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D47281ACF3D830062C233 /* libz.dylib */; };
 		841D472B1ACF3D8F0062C233 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D472A1ACF3D8F0062C233 /* libsqlite3.dylib */; };
 		841D47371ACF452C0062C233 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D47361ACF452C0062C233 /* Parse.framework */; };
+		841D47431ACF4FBE0062C233 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47411ACF4FBE0062C233 /* CalendarViewController.m */; };
+		841D47441ACF4FBE0062C233 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D47421ACF4FBE0062C233 /* CalendarViewController.xib */; };
+		841D47481ACF50070062C233 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47461ACF50070062C233 /* LocationViewController.m */; };
+		841D47491ACF50070062C233 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D47471ACF50070062C233 /* LocationViewController.xib */; };
+		841D474E1ACF51E80062C233 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D474C1ACF51E80062C233 /* SettingsViewController.m */; };
+		841D474F1ACF51E80062C233 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D474D1ACF51E80062C233 /* SettingsViewController.xib */; };
+		841D47531ACF52790062C233 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47511ACF52790062C233 /* NotificationViewController.m */; };
+		841D47541ACF52790062C233 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D47521ACF52790062C233 /* NotificationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +97,18 @@
 		841D47281ACF3D830062C233 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		841D472A1ACF3D8F0062C233 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		841D47361ACF452C0062C233 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		841D47401ACF4FBE0062C233 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		841D47411ACF4FBE0062C233 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		841D47421ACF4FBE0062C233 /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		841D47451ACF50070062C233 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		841D47461ACF50070062C233 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		841D47471ACF50070062C233 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		841D474B1ACF51E80062C233 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		841D474C1ACF51E80062C233 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		841D474D1ACF51E80062C233 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		841D47501ACF52790062C233 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		841D47511ACF52790062C233 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		841D47521ACF52790062C233 /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		BE46BC137A4D904C8CDCE8CC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38C5BCE1F514B329320651B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +190,7 @@
 		841D46BE1ACF2DE30062C233 /* Lernmo */ = {
 			isa = PBXGroup;
 			children = (
+				841D474A1ACF51D30062C233 /* SettingsInterface */,
 				841D47081ACF30BD0062C233 /* UserInterface */,
 				841D47021ACF30340062C233 /* SearchInterface */,
 				841D46FE1ACF301A0062C233 /* APIs */,
@@ -266,8 +287,27 @@
 				841D47091ACF30C90062C233 /* ViewUserProfileViewController.h */,
 				841D470A1ACF30C90062C233 /* ViewUserProfileViewController.m */,
 				841D470B1ACF30C90062C233 /* ViewUserProfileViewController.xib */,
+				841D47401ACF4FBE0062C233 /* CalendarViewController.h */,
+				841D47411ACF4FBE0062C233 /* CalendarViewController.m */,
+				841D47421ACF4FBE0062C233 /* CalendarViewController.xib */,
+				841D47451ACF50070062C233 /* LocationViewController.h */,
+				841D47461ACF50070062C233 /* LocationViewController.m */,
+				841D47471ACF50070062C233 /* LocationViewController.xib */,
 			);
 			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		841D474A1ACF51D30062C233 /* SettingsInterface */ = {
+			isa = PBXGroup;
+			children = (
+				841D474B1ACF51E80062C233 /* SettingsViewController.h */,
+				841D474C1ACF51E80062C233 /* SettingsViewController.m */,
+				841D474D1ACF51E80062C233 /* SettingsViewController.xib */,
+				841D47501ACF52790062C233 /* NotificationViewController.h */,
+				841D47511ACF52790062C233 /* NotificationViewController.m */,
+				841D47521ACF52790062C233 /* NotificationViewController.xib */,
+			);
+			name = SettingsInterface;
 			sourceTree = "<group>";
 		};
 		FF6746A012A6BB3F2B6DF612 /* Pods */ = {
@@ -362,8 +402,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				841D470D1ACF30C90062C233 /* ViewUserProfileViewController.xib in Resources */,
+				841D47491ACF50070062C233 /* LocationViewController.xib in Resources */,
+				841D47441ACF4FBE0062C233 /* CalendarViewController.xib in Resources */,
 				841D46F51ACF2F840062C233 /* LoginViewController.xib in Resources */,
 				841D46CD1ACF2DE30062C233 /* Images.xcassets in Resources */,
+				841D47541ACF52790062C233 /* NotificationViewController.xib in Resources */,
+				841D474F1ACF51E80062C233 /* SettingsViewController.xib in Resources */,
 				841D47071ACF30470062C233 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,13 +460,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				841D46F01ACF2EDD0062C233 /* NSDataConvert.m in Sources */,
+				841D47431ACF4FBE0062C233 /* CalendarViewController.m in Sources */,
 				841D46C51ACF2DE30062C233 /* AppDelegate.m in Sources */,
 				841D46EF1ACF2EDD0062C233 /* Converter.m in Sources */,
 				841D46C21ACF2DE30062C233 /* main.m in Sources */,
+				841D47531ACF52790062C233 /* NotificationViewController.m in Sources */,
 				841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */,
 				841D47011ACF30220062C233 /* Router.m in Sources */,
 				841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */,
+				841D474E1ACF51E80062C233 /* SettingsViewController.m in Sources */,
 				841D47061ACF30470062C233 /* SearchViewController.m in Sources */,
+				841D47481ACF50070062C233 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  SearchViewController.h
+//  SettingsViewController.h
 //  Lernmo
 //
 //  Created by William Gu on 4/3/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SettingsViewController : UIViewController
 
 @end

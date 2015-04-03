@@ -7,6 +7,7 @@
 //
 
 #import "ViewUserProfileViewController.h"
+#import "CalendarViewController.h"
 
 @interface ViewUserProfileViewController ()
 
@@ -27,6 +28,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)findAvailability:(UIButton *)sender
+{
+    CalendarViewController *calendarVC = [[CalendarViewController alloc] initWithNibName:@"CalendarViewController" bundle:nil];
+    [self.navigationController pushViewController:calendarVC animated:YES];
 }
 
 
