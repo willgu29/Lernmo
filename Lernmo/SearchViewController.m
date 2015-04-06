@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "Router.h"
 #import "SettingsViewController.h"
+#import <RESideMenu/RESideMenu.h>
 #import "NotificationViewController.h"
 
 @interface SearchViewController ()
@@ -32,12 +33,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
--(IBAction)settings:(UIButton *)sender
-{
-    SettingsViewController *settingsVC = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
-    [self.navigationController pushViewController:settingsVC animated:YES];
-}
 -(IBAction)notifications:(UIButton *)sender
 {
     NotificationViewController *notificationsVC = [[NotificationViewController alloc] initWithNibName:@"NotificationViewController" bundle:nil];

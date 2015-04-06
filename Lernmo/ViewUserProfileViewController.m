@@ -8,6 +8,7 @@
 
 #import "ViewUserProfileViewController.h"
 #import "CalendarViewController.h"
+#import "MessagingViewController.h"
 
 @interface ViewUserProfileViewController ()
 
@@ -28,6 +29,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)messageTeacher:(UIButton *)sender
+{
+    MessagingViewController *messageVC = [[MessagingViewController alloc] initWithNibName:@"MessagingViewController" bundle:nil];
+    [self.navigationController pushViewController:messageVC animated:YES];
 }
 
 -(IBAction)findAvailability:(UIButton *)sender

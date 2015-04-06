@@ -9,14 +9,19 @@
 #import "Router.h"
 #import "SearchViewController.h"
 #import "ViewUserProfileViewController.h"
-
+#import <RESideMenu/RESideMenu.h>
+#import "SideMenuBarViewController.h"
 @implementation Router
 
 +(UIViewController *)createMainInterfaceWithNavVC
 {
     SearchViewController *searchVC = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:searchVC];
-    return navVC;
+    
+    SideMenuBarViewController *sideMenu = [[SideMenuBarViewController alloc] initWithNibName:@"SideMenuBarViewController" bundle:nil];
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navVC leftMenuViewController:sideMenu rightMenuViewController:nil];
+                                          
+    return sideMenuViewController;
 }
 +(UIViewController *)createUserProfileVCWithUsername:(NSString *)username
 {

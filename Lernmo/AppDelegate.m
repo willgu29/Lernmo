@@ -13,6 +13,7 @@
 #import "ParseUserValues.h"
 #import "NSUserDefaultValues.h"
 #import "Router.h"
+#import <FBSDKCoreKit/FBSDKCorekit.h>
 @interface AppDelegate ()
 
 @end
@@ -25,7 +26,8 @@
     [self setupParse:application withLaunchOptions:launchOptions];
     [self setupPushNotifications:application];
     [self setupWindowWithRootViewController:[self getRootViewController]];
-    return YES;
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
 }
 
 
@@ -58,7 +60,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
+    [FBSDKAppEvents activateApp];
+
     // Logs 'install' and 'app activate' App Events.
 //    [FBSDKAppEvents activateApp];
 //    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
@@ -73,8 +76,10 @@
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
     
-    // attempt to extract a token from the url
-    return NO;
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
 
 }
 

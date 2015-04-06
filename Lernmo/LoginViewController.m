@@ -9,6 +9,11 @@
 #import "LoginViewController.h"
 #import "Router.h"
 
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+
 @interface LoginViewController ()
 
 @end
@@ -17,7 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+}
+-(void)viewWillAppear:(BOOL)animated{
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [self segueToMainInterface];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,6 +36,26 @@
 }
 
 -(IBAction)login:(UIButton *)sender
+{
+    
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    [login logInWithReadPermissions:@[@"email"] handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        if (error) {
+            // Process error
+        } else if (result.isCancelled) {
+            // Handle cancellations
+        } else {
+            // If you ask for multiple permissions at once, you
+            // should check if specific permissions missing
+            if ([result.grantedPermissions containsObject:@"email"]) {
+                [self segueToMainInterface];
+            }
+        }
+    }];
+    
+
+}
+-(void)segueToMainInterface
 {
     UIViewController *mainVC = [Router createMainInterfaceWithNavVC];
     [self presentViewController:mainVC animated:YES completion:nil];

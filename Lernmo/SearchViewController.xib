@@ -22,15 +22,6 @@
                         <outlet property="delegate" destination="-1" id="5wA-Da-odk"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiB-VY-3Dh">
-                    <rect key="frame" x="8" y="8" width="68" height="76"/>
-                    <state key="normal" title="Settings">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="settings:" destination="-1" eventType="touchUpInside" id="Btb-zE-udL"/>
-                    </connections>
-                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-c5-MdJ">
                     <rect key="frame" x="0.0" y="145" width="320" height="423"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,6 +37,15 @@
                     </state>
                     <connections>
                         <action selector="notifications:" destination="-1" eventType="touchUpInside" id="s12-fA-RXi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ya-zk-Pf3">
+                    <rect key="frame" x="8" y="8" width="55" height="65"/>
+                    <state key="normal" title="SideBar">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="presentLeftMenuViewController:" destination="-1" eventType="touchUpInside" id="e8k-ie-bcu"/>
                     </connections>
                 </button>
             </subviews>

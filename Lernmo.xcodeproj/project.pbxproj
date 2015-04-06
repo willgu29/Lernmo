@@ -43,6 +43,12 @@
 		841D474F1ACF51E80062C233 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D474D1ACF51E80062C233 /* SettingsViewController.xib */; };
 		841D47531ACF52790062C233 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47511ACF52790062C233 /* NotificationViewController.m */; };
 		841D47541ACF52790062C233 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D47521ACF52790062C233 /* NotificationViewController.xib */; };
+		84DB87EC1AD32A6B00EBC4FA /* SideMenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */; };
+		84DB87ED1AD32A6B00EBC4FA /* SideMenuBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */; };
+		84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87F01AD33B0000EBC4FA /* MessagingViewController.m */; };
+		84DB87F31AD33B0000EBC4FA /* MessagingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB87F11AD33B0000EBC4FA /* MessagingViewController.xib */; };
+		84DB87F81AD33EF800EBC4FA /* MonetaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87F61AD33EF800EBC4FA /* MonetaryViewController.m */; };
+		84DB87F91AD33EF800EBC4FA /* MonetaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB87F71AD33EF800EBC4FA /* MonetaryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +115,15 @@
 		841D47501ACF52790062C233 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
 		841D47511ACF52790062C233 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 		841D47521ACF52790062C233 /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuBarViewController.h; sourceTree = "<group>"; };
+		84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuBarViewController.m; sourceTree = "<group>"; };
+		84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBarViewController.xib; sourceTree = "<group>"; };
+		84DB87EF1AD33B0000EBC4FA /* MessagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagingViewController.h; sourceTree = "<group>"; };
+		84DB87F01AD33B0000EBC4FA /* MessagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagingViewController.m; sourceTree = "<group>"; };
+		84DB87F11AD33B0000EBC4FA /* MessagingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagingViewController.xib; sourceTree = "<group>"; };
+		84DB87F51AD33EF800EBC4FA /* MonetaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonetaryViewController.h; sourceTree = "<group>"; };
+		84DB87F61AD33EF800EBC4FA /* MonetaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonetaryViewController.m; sourceTree = "<group>"; };
+		84DB87F71AD33EF800EBC4FA /* MonetaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonetaryViewController.xib; sourceTree = "<group>"; };
 		BE46BC137A4D904C8CDCE8CC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38C5BCE1F514B329320651B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +205,7 @@
 		841D46BE1ACF2DE30062C233 /* Lernmo */ = {
 			isa = PBXGroup;
 			children = (
+				84DB87EE1AD33AE600EBC4FA /* MessagingInterface */,
 				841D474A1ACF51D30062C233 /* SettingsInterface */,
 				841D47081ACF30BD0062C233 /* UserInterface */,
 				841D47021ACF30340062C233 /* SearchInterface */,
@@ -300,14 +316,38 @@
 		841D474A1ACF51D30062C233 /* SettingsInterface */ = {
 			isa = PBXGroup;
 			children = (
+				84DB87F41AD33EE700EBC4FA /* ChildViews */,
+				84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */,
+				84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */,
+				84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */,
+			);
+			name = SettingsInterface;
+			sourceTree = "<group>";
+		};
+		84DB87EE1AD33AE600EBC4FA /* MessagingInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84DB87EF1AD33B0000EBC4FA /* MessagingViewController.h */,
+				84DB87F01AD33B0000EBC4FA /* MessagingViewController.m */,
+				84DB87F11AD33B0000EBC4FA /* MessagingViewController.xib */,
+			);
+			name = MessagingInterface;
+			sourceTree = "<group>";
+		};
+		84DB87F41AD33EE700EBC4FA /* ChildViews */ = {
+			isa = PBXGroup;
+			children = (
 				841D474B1ACF51E80062C233 /* SettingsViewController.h */,
 				841D474C1ACF51E80062C233 /* SettingsViewController.m */,
 				841D474D1ACF51E80062C233 /* SettingsViewController.xib */,
 				841D47501ACF52790062C233 /* NotificationViewController.h */,
 				841D47511ACF52790062C233 /* NotificationViewController.m */,
 				841D47521ACF52790062C233 /* NotificationViewController.xib */,
+				84DB87F51AD33EF800EBC4FA /* MonetaryViewController.h */,
+				84DB87F61AD33EF800EBC4FA /* MonetaryViewController.m */,
+				84DB87F71AD33EF800EBC4FA /* MonetaryViewController.xib */,
 			);
-			name = SettingsInterface;
+			name = ChildViews;
 			sourceTree = "<group>";
 		};
 		FF6746A012A6BB3F2B6DF612 /* Pods */ = {
@@ -409,6 +449,9 @@
 				841D47541ACF52790062C233 /* NotificationViewController.xib in Resources */,
 				841D474F1ACF51E80062C233 /* SettingsViewController.xib in Resources */,
 				841D47071ACF30470062C233 /* SearchViewController.xib in Resources */,
+				84DB87ED1AD32A6B00EBC4FA /* SideMenuBarViewController.xib in Resources */,
+				84DB87F31AD33B0000EBC4FA /* MessagingViewController.xib in Resources */,
+				84DB87F91AD33EF800EBC4FA /* MonetaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,13 +504,16 @@
 			files = (
 				841D46F01ACF2EDD0062C233 /* NSDataConvert.m in Sources */,
 				841D47431ACF4FBE0062C233 /* CalendarViewController.m in Sources */,
+				84DB87EC1AD32A6B00EBC4FA /* SideMenuBarViewController.m in Sources */,
 				841D46C51ACF2DE30062C233 /* AppDelegate.m in Sources */,
 				841D46EF1ACF2EDD0062C233 /* Converter.m in Sources */,
+				84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */,
 				841D46C21ACF2DE30062C233 /* main.m in Sources */,
 				841D47531ACF52790062C233 /* NotificationViewController.m in Sources */,
 				841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */,
 				841D47011ACF30220062C233 /* Router.m in Sources */,
 				841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */,
+				84DB87F81AD33EF800EBC4FA /* MonetaryViewController.m in Sources */,
 				841D474E1ACF51E80062C233 /* SettingsViewController.m in Sources */,
 				841D47061ACF30470062C233 /* SearchViewController.m in Sources */,
 				841D47481ACF50070062C233 /* LocationViewController.m in Sources */,
