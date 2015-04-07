@@ -12,6 +12,7 @@
 #import "NotificationViewController.h"
 #import "MessagingViewController.h"
 #import "MonetaryViewController.h"
+#import "MyClassesViewController.h"
 @interface SideMenuBarViewController ()
 
 @end
@@ -26,6 +27,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)myClasses:(UIButton *)sender
+{
+    [self.sideMenuViewController hideMenuViewController];
+    MyClassesViewController *myClassesVC = [[MyClassesViewController alloc] initWithNibName:@"MyClassesViewController" bundle:nil];
+    [(UINavigationController *)self.sideMenuViewController.contentViewController pushViewController:myClassesVC animated:YES];
 }
 
 -(IBAction)myProfile:(UIButton *)sender

@@ -43,6 +43,10 @@
 		841D474F1ACF51E80062C233 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D474D1ACF51E80062C233 /* SettingsViewController.xib */; };
 		841D47531ACF52790062C233 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D47511ACF52790062C233 /* NotificationViewController.m */; };
 		841D47541ACF52790062C233 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D47521ACF52790062C233 /* NotificationViewController.xib */; };
+		848CA99D1AD353AA00529FCA /* MyClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848CA99B1AD353AA00529FCA /* MyClassesViewController.m */; };
+		848CA99E1AD353AA00529FCA /* MyClassesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848CA99C1AD353AA00529FCA /* MyClassesViewController.xib */; };
+		848CA9A31AD355CC00529FCA /* ClassInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848CA9A11AD355CC00529FCA /* ClassInViewController.m */; };
+		848CA9A41AD355CC00529FCA /* ClassInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848CA9A21AD355CC00529FCA /* ClassInViewController.xib */; };
 		84DB87EC1AD32A6B00EBC4FA /* SideMenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */; };
 		84DB87ED1AD32A6B00EBC4FA /* SideMenuBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */; };
 		84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87F01AD33B0000EBC4FA /* MessagingViewController.m */; };
@@ -115,6 +119,12 @@
 		841D47501ACF52790062C233 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
 		841D47511ACF52790062C233 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 		841D47521ACF52790062C233 /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		848CA99A1AD353AA00529FCA /* MyClassesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClassesViewController.h; sourceTree = "<group>"; };
+		848CA99B1AD353AA00529FCA /* MyClassesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClassesViewController.m; sourceTree = "<group>"; };
+		848CA99C1AD353AA00529FCA /* MyClassesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyClassesViewController.xib; sourceTree = "<group>"; };
+		848CA9A01AD355CC00529FCA /* ClassInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassInViewController.h; sourceTree = "<group>"; };
+		848CA9A11AD355CC00529FCA /* ClassInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassInViewController.m; sourceTree = "<group>"; };
+		848CA9A21AD355CC00529FCA /* ClassInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassInViewController.xib; sourceTree = "<group>"; };
 		84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuBarViewController.h; sourceTree = "<group>"; };
 		84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuBarViewController.m; sourceTree = "<group>"; };
 		84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBarViewController.xib; sourceTree = "<group>"; };
@@ -205,6 +215,7 @@
 		841D46BE1ACF2DE30062C233 /* Lernmo */ = {
 			isa = PBXGroup;
 			children = (
+				848CA99F1AD355BA00529FCA /* GlobalInProgressInterface */,
 				84DB87EE1AD33AE600EBC4FA /* MessagingInterface */,
 				841D474A1ACF51D30062C233 /* SettingsInterface */,
 				841D47081ACF30BD0062C233 /* UserInterface */,
@@ -324,6 +335,16 @@
 			name = SettingsInterface;
 			sourceTree = "<group>";
 		};
+		848CA99F1AD355BA00529FCA /* GlobalInProgressInterface */ = {
+			isa = PBXGroup;
+			children = (
+				848CA9A01AD355CC00529FCA /* ClassInViewController.h */,
+				848CA9A11AD355CC00529FCA /* ClassInViewController.m */,
+				848CA9A21AD355CC00529FCA /* ClassInViewController.xib */,
+			);
+			name = GlobalInProgressInterface;
+			sourceTree = "<group>";
+		};
 		84DB87EE1AD33AE600EBC4FA /* MessagingInterface */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +367,9 @@
 				84DB87F51AD33EF800EBC4FA /* MonetaryViewController.h */,
 				84DB87F61AD33EF800EBC4FA /* MonetaryViewController.m */,
 				84DB87F71AD33EF800EBC4FA /* MonetaryViewController.xib */,
+				848CA99A1AD353AA00529FCA /* MyClassesViewController.h */,
+				848CA99B1AD353AA00529FCA /* MyClassesViewController.m */,
+				848CA99C1AD353AA00529FCA /* MyClassesViewController.xib */,
 			);
 			name = ChildViews;
 			sourceTree = "<group>";
@@ -442,8 +466,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				841D470D1ACF30C90062C233 /* ViewUserProfileViewController.xib in Resources */,
+				848CA9A41AD355CC00529FCA /* ClassInViewController.xib in Resources */,
 				841D47491ACF50070062C233 /* LocationViewController.xib in Resources */,
 				841D47441ACF4FBE0062C233 /* CalendarViewController.xib in Resources */,
+				848CA99E1AD353AA00529FCA /* MyClassesViewController.xib in Resources */,
 				841D46F51ACF2F840062C233 /* LoginViewController.xib in Resources */,
 				841D46CD1ACF2DE30062C233 /* Images.xcassets in Resources */,
 				841D47541ACF52790062C233 /* NotificationViewController.xib in Resources */,
@@ -509,12 +535,14 @@
 				841D46EF1ACF2EDD0062C233 /* Converter.m in Sources */,
 				84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */,
 				841D46C21ACF2DE30062C233 /* main.m in Sources */,
+				848CA99D1AD353AA00529FCA /* MyClassesViewController.m in Sources */,
 				841D47531ACF52790062C233 /* NotificationViewController.m in Sources */,
 				841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */,
 				841D47011ACF30220062C233 /* Router.m in Sources */,
 				841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */,
 				84DB87F81AD33EF800EBC4FA /* MonetaryViewController.m in Sources */,
 				841D474E1ACF51E80062C233 /* SettingsViewController.m in Sources */,
+				848CA9A31AD355CC00529FCA /* ClassInViewController.m in Sources */,
 				841D47061ACF30470062C233 /* SearchViewController.m in Sources */,
 				841D47481ACF50070062C233 /* LocationViewController.m in Sources */,
 			);

@@ -59,6 +59,15 @@
                         <action selector="monetary:" destination="-1" eventType="touchUpInside" id="uz5-c0-bEe"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onc-UF-IV1">
+                    <rect key="frame" x="47" y="105" width="80" height="30"/>
+                    <state key="normal" title="My Classes">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="myClasses:" destination="-1" eventType="touchUpInside" id="DM7-yn-Nb0"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
