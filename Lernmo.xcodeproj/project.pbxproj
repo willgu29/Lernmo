@@ -135,6 +135,7 @@
 		84A6A31B1ADCF18300430A16 /* SetupBankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupBankingViewController.h; sourceTree = "<group>"; };
 		84A6A31C1ADCF18300430A16 /* SetupBankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupBankingViewController.m; sourceTree = "<group>"; };
 		84A6A31D1ADCF18300430A16 /* SetupBankingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupBankingViewController.xib; sourceTree = "<group>"; };
+		84A6A3201ADE427400430A16 /* TeacherParseValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherParseValues.h; sourceTree = "<group>"; };
 		84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuBarViewController.h; sourceTree = "<group>"; };
 		84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuBarViewController.m; sourceTree = "<group>"; };
 		84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBarViewController.xib; sourceTree = "<group>"; };
@@ -298,6 +299,7 @@
 			children = (
 				841D46FD1ACF2FDC0062C233 /* NSUserDefaultValues.h */,
 				841D46FC1ACF2FCE0062C233 /* ParseUserValues.h */,
+				84A6A3201ADE427400430A16 /* TeacherParseValues.h */,
 			);
 			name = Constants;
 			sourceTree = "<group>";

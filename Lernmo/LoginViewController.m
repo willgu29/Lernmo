@@ -48,6 +48,7 @@
             [self getAndSaveFBDataForParseUserInCallback];
             [self segueToSetupViewController];
         } else {
+            [self getAndSaveFBDataForParseUserInCallback];
             [self segueToMainInterface];
         }
     }];
@@ -69,6 +70,7 @@
 }
 -(void)saveFBDataToParseUser:(FBSDKProfile *)userInfo
 {
+    [[NSUserDefaults standardUserDefaults] setObject:userInfo.userID forKey:N_FB_TOKEN];
     PFUser *currentUser = [PFUser currentUser];
     currentUser[U_FB_ID] = userInfo.userID;
     currentUser[U_DEVICE_TOKEN] = [[NSUserDefaults standardUserDefaults] stringForKey:N_DEVICE_TOKEN_STRING];

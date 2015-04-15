@@ -7,8 +7,13 @@
 //
 
 #import "SettingsViewController.h"
-
+#import <Parse/Parse.h>
+#import "NSUserDefaultValues.h"
+#import "TeacherParseValues.h"
 @interface SettingsViewController ()
+
+@property (nonatomic, weak) IBOutlet UITextView *textViewSkillsAdded;
+@property (nonatomic, weak) IBOutlet UITextField *textFieldAddSkills;
 
 @end
 
@@ -22,11 +27,61 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = NO;
+    [self fetchUserSkills];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)addSkill:(UIButton *)sender
+{
+    PFObject *teacher = [self fetchUser];
+    [teacher addUniqueObject:_textFieldAddSkills.text forKey:T_SKILLS];
+    [teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self fetchUserSkills];
+    }];
+}
+-(IBAction)removeSkill:(UIButton *)sender
+{
+    PFObject *teacher = [self fetchUser];
+    [teacher removeObject:_textFieldAddSkills.text forKey:T_SKILLS];
+    [teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self fetchUserSkills];
+    }];
+}
+
+-(PFObject *)fetchUser
+{
+    NSString *userID = [[NSUserDefaults standardUserDefaults] objectForKey:N_FB_TOKEN];
+    PFQuery *query = [PFQuery queryWithClassName:@"Teachers"];
+    [query whereKey:T_USER_ID equalTo:userID];
+    PFObject *teacher = [query getFirstObject];
+    return teacher;
+}
+
+-(void)fetchUserSkills
+{
+    PFObject *teacher = [self fetchUser];
+    if (teacher)
+    {
+        NSArray *skills = teacher[T_SKILLS];
+        NSString * result = [[skills valueForKey:@"description"] componentsJoinedByString:@""];
+        _textViewSkillsAdded.text = result;
+    }
+    else //Create Teacher
+    {
+        PFObject *newTeacher = [PFObject objectWithClassName:@"Teachers"];
+        newTeacher[T_USER_ID] = [[NSUserDefaults standardUserDefaults] objectForKey:N_FB_TOKEN];
+        newTeacher[T_SKILLS] = @[];
+        [newTeacher saveInBackground];
+    }
+}
+
+-(void)displaySkillsForTeacher:(NSArray *)teachers
+{
+    
 }
 
 @end
