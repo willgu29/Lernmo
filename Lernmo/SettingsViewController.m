@@ -10,8 +10,11 @@
 #import <Parse/Parse.h>
 #import "NSUserDefaultValues.h"
 #import "TeacherParseValues.h"
+#import "CalendarViewController.h"
 @interface SettingsViewController ()
 
+//@property (nonatomic, strong) IBOutlet CKCalendarView *calendarView;
+@property (nonatomic, strong) PFObject *teacher;
 @property (nonatomic, weak) IBOutlet UITextView *textViewSkillsAdded;
 @property (nonatomic, weak) IBOutlet UITextField *textFieldAddSkills;
 
@@ -23,6 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Edit Profile";
+    _teacher = [self fetchTeacher];
+
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -35,11 +40,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)segueToCalendar:(UIButton *)sender
+{
+    CalendarViewController *calendarVC =[[CalendarViewController alloc] initWithNibName:@"CalendarViewController" bundle:nil];
+    [self presentViewController:calendarVC animated:YES completion:nil];
+}
+
+-(void)setupCalendar
+{
+    CKCalendarView *calendarView = [CKCalendarView new];
+    calendarView.delegate = self;
+    calendarView.dataSource = self;
+    [self.view addSubview:calendarView];
+}
+
 #pragma mark - UITextFieldDelegate
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     textField.text = @"";
+}
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_textFieldAddSkills resignFirstResponder];
 }
 
 
@@ -47,48 +75,46 @@
 
 -(IBAction)addSkill:(UIButton *)sender
 {
-    PFObject *teacher = [self fetchUser];
-    [teacher addUniqueObject:_textFieldAddSkills.text forKey:T_SKILLS];
-    [teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    [_teacher addUniqueObject:_textFieldAddSkills.text forKey:T_SKILLS];
+    [_teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {[self fetchUserSkills];}
     }];
     _textFieldAddSkills.text = @"";
 }
 -(IBAction)removeSkill:(UIButton *)sender
 {
-    PFObject *teacher = [self fetchUser];
-    [teacher removeObject:_textFieldAddSkills.text forKey:T_SKILLS];
-    [teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    [_teacher removeObject:_textFieldAddSkills.text forKey:T_SKILLS];
+    [_teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {[self fetchUserSkills];}
     }];
     _textFieldAddSkills.text = @"";
 }
 
 #pragma mark - Helper functions
--(PFObject *)fetchUser
+-(PFObject *)fetchTeacher
 {
-    NSString *userID = [[NSUserDefaults standardUserDefaults] objectForKey:N_FB_TOKEN];
+    PFUser *currentUser = [PFUser currentUser];
     PFQuery *query = [PFQuery queryWithClassName:@"Teachers"];
-    [query whereKey:T_USER_ID equalTo:userID];
+    [query whereKey:T_USER_ID equalTo:currentUser.username];
     PFObject *teacher = [query getFirstObject];
     return teacher;
 }
 
 -(void)fetchUserSkills
 {
-    PFObject *teacher = [self fetchUser];
-    if (teacher)
+    if (_teacher)
     {
-        NSArray *skills = teacher[T_SKILLS];
+        NSArray *skills = _teacher[T_SKILLS];
         NSString * result = [[skills valueForKey:@"description"] componentsJoinedByString:@""];
         _textViewSkillsAdded.text = result;
     }
     else //Create Teacher
     {
         PFObject *newTeacher = [PFObject objectWithClassName:@"Teachers"];
-        newTeacher[T_USER_ID] = [[NSUserDefaults standardUserDefaults] objectForKey:N_FB_TOKEN];
+        newTeacher[T_USER_ID] = [PFUser currentUser].username;
         newTeacher[T_SKILLS] = @[];
         [newTeacher saveInBackground];
+        _teacher = newTeacher;
     }
 }
 

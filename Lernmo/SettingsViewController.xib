@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ami-uR-t2z">
-                    <rect key="frame" x="131" y="293" width="61" height="30"/>
+                    <rect key="frame" x="131" y="269" width="61" height="30"/>
                     <state key="normal" title="Add Skill">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -25,6 +25,14 @@
                         <action selector="addSkill:" destination="-1" eventType="touchUpInside" id="Z0a-ti-Oht"/>
                     </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a skill..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t23-tN-vCM">
+                    <rect key="frame" x="40" y="222" width="243" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="mTU-fo-qyJ"/>
+                    </connections>
+                </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Skills" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-Rc-VTJ">
                     <rect key="frame" x="109" y="403" width="103" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,7 +49,7 @@
                     </connections>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-Xo-4ZG">
-                    <rect key="frame" x="116" y="331" width="89" height="30"/>
+                    <rect key="frame" x="116" y="307" width="89" height="30"/>
                     <state key="normal" title="Remove Skill">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -49,14 +57,15 @@
                         <action selector="removeSkill:" destination="-1" eventType="touchUpInside" id="XSk-hM-Nyp"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a skill..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t23-tN-vCM">
-                    <rect key="frame" x="40" y="255" width="243" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teM-1W-U2U">
+                    <rect key="frame" x="49" y="123" width="224" height="30"/>
+                    <state key="normal" title="Add Available Times to Calendar">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="mTU-fo-qyJ"/>
+                        <action selector="segueToCalendar:" destination="-1" eventType="touchUpInside" id="qGE-Ku-FM5"/>
                     </connections>
-                </textField>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SettingsViewController : UIViewController <UITextFieldDelegate>
+#import  <CalendarKit.h>
+@interface SettingsViewController : UIViewController <UITextFieldDelegate, CKCalendarViewDataSource, CKCalendarViewDelegate>
 
 @end

@@ -48,7 +48,7 @@
             [self getAndSaveFBDataForParseUserInCallback];
             [self segueToSetupViewController];
         } else {
-            [self getAndSaveFBDataForParseUserInCallback];
+//            [self getAndSaveFBDataForParseUserInCallback];
             [self segueToMainInterface];
         }
     }];

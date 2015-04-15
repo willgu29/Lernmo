@@ -51,6 +51,9 @@
 		84A6A3191ADCF14F00430A16 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6A3181ADCF14F00430A16 /* Location.m */; };
 		84A6A31E1ADCF18300430A16 /* SetupBankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6A31C1ADCF18300430A16 /* SetupBankingViewController.m */; };
 		84A6A31F1ADCF18300430A16 /* SetupBankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6A31D1ADCF18300430A16 /* SetupBankingViewController.xib */; };
+		84A6A3221ADE587600430A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6A3211ADE587600430A16 /* Foundation.framework */; };
+		84A6A3261ADE5C5E00430A16 /* TeacherCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6A3241ADE5C5E00430A16 /* TeacherCalendarViewController.m */; };
+		84A6A3271ADE5C5E00430A16 /* TeacherCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6A3251ADE5C5E00430A16 /* TeacherCalendarViewController.xib */; };
 		84DB87EC1AD32A6B00EBC4FA /* SideMenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */; };
 		84DB87ED1AD32A6B00EBC4FA /* SideMenuBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */; };
 		84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87F01AD33B0000EBC4FA /* MessagingViewController.m */; };
@@ -136,6 +139,10 @@
 		84A6A31C1ADCF18300430A16 /* SetupBankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupBankingViewController.m; sourceTree = "<group>"; };
 		84A6A31D1ADCF18300430A16 /* SetupBankingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupBankingViewController.xib; sourceTree = "<group>"; };
 		84A6A3201ADE427400430A16 /* TeacherParseValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherParseValues.h; sourceTree = "<group>"; };
+		84A6A3211ADE587600430A16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84A6A3231ADE5C5E00430A16 /* TeacherCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherCalendarViewController.h; sourceTree = "<group>"; };
+		84A6A3241ADE5C5E00430A16 /* TeacherCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherCalendarViewController.m; sourceTree = "<group>"; };
+		84A6A3251ADE5C5E00430A16 /* TeacherCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherCalendarViewController.xib; sourceTree = "<group>"; };
 		84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuBarViewController.h; sourceTree = "<group>"; };
 		84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuBarViewController.m; sourceTree = "<group>"; };
 		84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBarViewController.xib; sourceTree = "<group>"; };
@@ -154,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6A3221ADE587600430A16 /* Foundation.framework in Frameworks */,
 				841D472B1ACF3D8F0062C233 /* libsqlite3.dylib in Frameworks */,
 				841D47291ACF3D830062C233 /* libz.dylib in Frameworks */,
 				841D47251ACF3D650062C233 /* AudioToolbox.framework in Frameworks */,
@@ -186,6 +194,7 @@
 		7125A15F0055A69D1DB6EA08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A6A3211ADE587600430A16 /* Foundation.framework */,
 				84A6A3151ADCEF9000430A16 /* ParseFacebookUtilsV4.framework */,
 				841D472A1ACF3D8F0062C233 /* libsqlite3.dylib */,
 				841D47281ACF3D830062C233 /* libz.dylib */,
@@ -348,6 +357,9 @@
 				84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */,
 				84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */,
 				84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */,
+				84A6A3231ADE5C5E00430A16 /* TeacherCalendarViewController.h */,
+				84A6A3241ADE5C5E00430A16 /* TeacherCalendarViewController.m */,
+				84A6A3251ADE5C5E00430A16 /* TeacherCalendarViewController.xib */,
 			);
 			name = SideBarInterface;
 			sourceTree = "<group>";
@@ -505,6 +517,7 @@
 				841D47071ACF30470062C233 /* SearchViewController.xib in Resources */,
 				84DB87ED1AD32A6B00EBC4FA /* SideMenuBarViewController.xib in Resources */,
 				84DB87F31AD33B0000EBC4FA /* MessagingViewController.xib in Resources */,
+				84A6A3271ADE5C5E00430A16 /* TeacherCalendarViewController.xib in Resources */,
 				84DB87F91AD33EF800EBC4FA /* MonetaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +580,7 @@
 				848CA99D1AD353AA00529FCA /* MyClassesViewController.m in Sources */,
 				841D47531ACF52790062C233 /* NotificationViewController.m in Sources */,
 				841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */,
+				84A6A3261ADE5C5E00430A16 /* TeacherCalendarViewController.m in Sources */,
 				841D47011ACF30220062C233 /* Router.m in Sources */,
 				84A6A31E1ADCF18300430A16 /* SetupBankingViewController.m in Sources */,
 				841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */,

@@ -13,6 +13,11 @@
 #import "MessagingViewController.h"
 #import "MonetaryViewController.h"
 #import "MyClassesViewController.h"
+#import "LoginViewController.h"
+
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 @interface SideMenuBarViewController ()
 
 @end
@@ -63,8 +68,13 @@
 }
 -(IBAction)logout:(UIButton *)sender
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"I'll implement this later" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-    [alertView show];
+    [self.sideMenuViewController hideMenuViewController];
+    [FBSDKAccessToken setCurrentAccessToken:nil];
+    [PFUser logOutInBackgroundWithBlock:^(NSError *error) {
+        [self.sideMenuViewController.contentViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+        
+    }];
+
 }
 
 
