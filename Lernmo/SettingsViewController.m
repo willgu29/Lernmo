@@ -35,23 +35,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITextFieldDelegate
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    textField.text = @"";
+}
+
+
+#pragma mark - IBActions
+
 -(IBAction)addSkill:(UIButton *)sender
 {
     PFObject *teacher = [self fetchUser];
     [teacher addUniqueObject:_textFieldAddSkills.text forKey:T_SKILLS];
     [teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [self fetchUserSkills];
+        if (succeeded) {[self fetchUserSkills];}
     }];
+    _textFieldAddSkills.text = @"";
 }
 -(IBAction)removeSkill:(UIButton *)sender
 {
     PFObject *teacher = [self fetchUser];
     [teacher removeObject:_textFieldAddSkills.text forKey:T_SKILLS];
     [teacher saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [self fetchUserSkills];
+        if (succeeded) {[self fetchUserSkills];}
     }];
+    _textFieldAddSkills.text = @"";
 }
 
+#pragma mark - Helper functions
 -(PFObject *)fetchUser
 {
     NSString *userID = [[NSUserDefaults standardUserDefaults] objectForKey:N_FB_TOKEN];

@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController">
             <connections>
+                <outlet property="textFieldAddSkills" destination="t23-tN-vCM" id="58M-U9-0dG"/>
+                <outlet property="textViewSkillsAdded" destination="EJV-fC-JKR" id="dSi-KJ-ba4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,33 +17,45 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ami-uR-t2z">
-                    <rect key="frame" x="131" y="245" width="61" height="30"/>
+                    <rect key="frame" x="131" y="293" width="61" height="30"/>
                     <state key="normal" title="Add Skill">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="addSkill:" destination="-1" eventType="touchUpInside" id="Z0a-ti-Oht"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Skills" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-Rc-VTJ">
-                    <rect key="frame" x="109" y="332" width="103" height="21"/>
+                    <rect key="frame" x="109" y="403" width="103" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="None" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJV-fC-JKR">
-                    <rect key="frame" x="40" y="379" width="240" height="128"/>
+                    <rect key="frame" x="40" y="432" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="WFU-U2-yQZ"/>
+                    </connections>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-Xo-4ZG">
-                    <rect key="frame" x="116" y="283" width="89" height="30"/>
+                    <rect key="frame" x="116" y="331" width="89" height="30"/>
                     <state key="normal" title="Remove Skill">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="removeSkill:" destination="-1" eventType="touchUpInside" id="XSk-hM-Nyp"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a skill..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t23-tN-vCM">
-                    <rect key="frame" x="40" y="200" width="243" height="30"/>
+                    <rect key="frame" x="40" y="255" width="243" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="mTU-fo-qyJ"/>
+                    </connections>
                 </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
