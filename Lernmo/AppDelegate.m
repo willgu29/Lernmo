@@ -13,7 +13,8 @@
 #import "ParseUserValues.h"
 #import "NSUserDefaultValues.h"
 #import "Router.h"
-#import <FBSDKCoreKit/FBSDKCorekit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 @interface AppDelegate ()
 
 @end
@@ -26,6 +27,8 @@
     [self setupParse:application withLaunchOptions:launchOptions];
     [self setupPushNotifications:application];
     [self setupWindowWithRootViewController:[self getRootViewController]];
+    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }

@@ -47,6 +47,10 @@
 		848CA99E1AD353AA00529FCA /* MyClassesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848CA99C1AD353AA00529FCA /* MyClassesViewController.xib */; };
 		848CA9A31AD355CC00529FCA /* ClassInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848CA9A11AD355CC00529FCA /* ClassInViewController.m */; };
 		848CA9A41AD355CC00529FCA /* ClassInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848CA9A21AD355CC00529FCA /* ClassInViewController.xib */; };
+		84A6A3161ADCEF9000430A16 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6A3151ADCEF9000430A16 /* ParseFacebookUtilsV4.framework */; };
+		84A6A3191ADCF14F00430A16 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6A3181ADCF14F00430A16 /* Location.m */; };
+		84A6A31E1ADCF18300430A16 /* SetupBankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6A31C1ADCF18300430A16 /* SetupBankingViewController.m */; };
+		84A6A31F1ADCF18300430A16 /* SetupBankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6A31D1ADCF18300430A16 /* SetupBankingViewController.xib */; };
 		84DB87EC1AD32A6B00EBC4FA /* SideMenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */; };
 		84DB87ED1AD32A6B00EBC4FA /* SideMenuBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */; };
 		84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB87F01AD33B0000EBC4FA /* MessagingViewController.m */; };
@@ -125,6 +129,12 @@
 		848CA9A01AD355CC00529FCA /* ClassInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassInViewController.h; sourceTree = "<group>"; };
 		848CA9A11AD355CC00529FCA /* ClassInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassInViewController.m; sourceTree = "<group>"; };
 		848CA9A21AD355CC00529FCA /* ClassInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassInViewController.xib; sourceTree = "<group>"; };
+		84A6A3151ADCEF9000430A16 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		84A6A3171ADCF14F00430A16 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		84A6A3181ADCF14F00430A16 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		84A6A31B1ADCF18300430A16 /* SetupBankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupBankingViewController.h; sourceTree = "<group>"; };
+		84A6A31C1ADCF18300430A16 /* SetupBankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupBankingViewController.m; sourceTree = "<group>"; };
+		84A6A31D1ADCF18300430A16 /* SetupBankingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupBankingViewController.xib; sourceTree = "<group>"; };
 		84DB87E91AD32A6B00EBC4FA /* SideMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuBarViewController.h; sourceTree = "<group>"; };
 		84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuBarViewController.m; sourceTree = "<group>"; };
 		84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBarViewController.xib; sourceTree = "<group>"; };
@@ -153,6 +163,7 @@
 				841D471D1ACF3D480062C233 /* QuartzCore.framework in Frameworks */,
 				841D471B1ACF3D420062C233 /* SystemConfiguration.framework in Frameworks */,
 				841D47191ACF3D390062C233 /* StoreKit.framework in Frameworks */,
+				84A6A3161ADCEF9000430A16 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				841D47171ACF3D2C0062C233 /* Social.framework in Frameworks */,
 				841D47151ACF3D230062C233 /* Security.framework in Frameworks */,
 				841D47131ACF3D0A0062C233 /* CFNetwork.framework in Frameworks */,
@@ -174,6 +185,7 @@
 		7125A15F0055A69D1DB6EA08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A6A3151ADCEF9000430A16 /* ParseFacebookUtilsV4.framework */,
 				841D472A1ACF3D8F0062C233 /* libsqlite3.dylib */,
 				841D47281ACF3D830062C233 /* libz.dylib */,
 				841D47241ACF3D650062C233 /* AudioToolbox.framework */,
@@ -215,9 +227,10 @@
 		841D46BE1ACF2DE30062C233 /* Lernmo */ = {
 			isa = PBXGroup;
 			children = (
+				84A6A31A1ADCF17100430A16 /* SetupInterface */,
 				848CA99F1AD355BA00529FCA /* GlobalInProgressInterface */,
 				84DB87EE1AD33AE600EBC4FA /* MessagingInterface */,
-				841D474A1ACF51D30062C233 /* SettingsInterface */,
+				841D474A1ACF51D30062C233 /* SideBarInterface */,
 				841D47081ACF30BD0062C233 /* UserInterface */,
 				841D47021ACF30340062C233 /* SearchInterface */,
 				841D46FE1ACF301A0062C233 /* APIs */,
@@ -292,6 +305,8 @@
 		841D46FE1ACF301A0062C233 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				84A6A3171ADCF14F00430A16 /* Location.h */,
+				84A6A3181ADCF14F00430A16 /* Location.m */,
 				841D46FF1ACF30220062C233 /* Router.h */,
 				841D47001ACF30220062C233 /* Router.m */,
 			);
@@ -324,7 +339,7 @@
 			name = UserInterface;
 			sourceTree = "<group>";
 		};
-		841D474A1ACF51D30062C233 /* SettingsInterface */ = {
+		841D474A1ACF51D30062C233 /* SideBarInterface */ = {
 			isa = PBXGroup;
 			children = (
 				84DB87F41AD33EE700EBC4FA /* ChildViews */,
@@ -332,7 +347,7 @@
 				84DB87EA1AD32A6B00EBC4FA /* SideMenuBarViewController.m */,
 				84DB87EB1AD32A6B00EBC4FA /* SideMenuBarViewController.xib */,
 			);
-			name = SettingsInterface;
+			name = SideBarInterface;
 			sourceTree = "<group>";
 		};
 		848CA99F1AD355BA00529FCA /* GlobalInProgressInterface */ = {
@@ -343,6 +358,16 @@
 				848CA9A21AD355CC00529FCA /* ClassInViewController.xib */,
 			);
 			name = GlobalInProgressInterface;
+			sourceTree = "<group>";
+		};
+		84A6A31A1ADCF17100430A16 /* SetupInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84A6A31B1ADCF18300430A16 /* SetupBankingViewController.h */,
+				84A6A31C1ADCF18300430A16 /* SetupBankingViewController.m */,
+				84A6A31D1ADCF18300430A16 /* SetupBankingViewController.xib */,
+			);
+			name = SetupInterface;
 			sourceTree = "<group>";
 		};
 		84DB87EE1AD33AE600EBC4FA /* MessagingInterface */ = {
@@ -468,6 +493,7 @@
 				841D470D1ACF30C90062C233 /* ViewUserProfileViewController.xib in Resources */,
 				848CA9A41AD355CC00529FCA /* ClassInViewController.xib in Resources */,
 				841D47491ACF50070062C233 /* LocationViewController.xib in Resources */,
+				84A6A31F1ADCF18300430A16 /* SetupBankingViewController.xib in Resources */,
 				841D47441ACF4FBE0062C233 /* CalendarViewController.xib in Resources */,
 				848CA99E1AD353AA00529FCA /* MyClassesViewController.xib in Resources */,
 				841D46F51ACF2F840062C233 /* LoginViewController.xib in Resources */,
@@ -532,6 +558,7 @@
 				841D47431ACF4FBE0062C233 /* CalendarViewController.m in Sources */,
 				84DB87EC1AD32A6B00EBC4FA /* SideMenuBarViewController.m in Sources */,
 				841D46C51ACF2DE30062C233 /* AppDelegate.m in Sources */,
+				84A6A3191ADCF14F00430A16 /* Location.m in Sources */,
 				841D46EF1ACF2EDD0062C233 /* Converter.m in Sources */,
 				84DB87F21AD33B0000EBC4FA /* MessagingViewController.m in Sources */,
 				841D46C21ACF2DE30062C233 /* main.m in Sources */,
@@ -539,6 +566,7 @@
 				841D47531ACF52790062C233 /* NotificationViewController.m in Sources */,
 				841D470C1ACF30C90062C233 /* ViewUserProfileViewController.m in Sources */,
 				841D47011ACF30220062C233 /* Router.m in Sources */,
+				84A6A31E1ADCF18300430A16 /* SetupBankingViewController.m in Sources */,
 				841D46F41ACF2F840062C233 /* LoginViewController.m in Sources */,
 				84DB87F81AD33EF800EBC4FA /* MonetaryViewController.m in Sources */,
 				841D474E1ACF51E80062C233 /* SettingsViewController.m in Sources */,
@@ -649,7 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lernmo",
@@ -673,7 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lernmo",

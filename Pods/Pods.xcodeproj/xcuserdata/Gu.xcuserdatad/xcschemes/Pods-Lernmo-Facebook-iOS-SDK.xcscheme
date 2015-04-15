@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7370606AF66AC0C8D19700B0"
+               BlueprintIdentifier = "5D8461E94346A05DF03A6FE4"
                BuildableName = "libPods-Lernmo-Facebook-iOS-SDK.a"
                BlueprintName = "Pods-Lernmo-Facebook-iOS-SDK"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -11,5 +11,5 @@
 
 #define N_DEVICE_TOKEN_STRING @"deviceTokenTypeString"
 #define N_DEVICE_TOKEN_DATA @"deviceTokenTypeData"
-
+#define N_FB_TOKEN @"fbToken"
 #endif
