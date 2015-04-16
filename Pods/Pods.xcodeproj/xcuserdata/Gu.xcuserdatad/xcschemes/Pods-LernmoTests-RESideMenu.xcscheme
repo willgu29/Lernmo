@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E7B3BBB1281B382C76FEC6A8"
+               BlueprintIdentifier = "4C6898DBA3DC68D77EDAED8A"
                BuildableName = "libPods-LernmoTests-RESideMenu.a"
                BlueprintName = "Pods-LernmoTests-RESideMenu"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -39,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E7B3BBB1281B382C76FEC6A8"
-            BuildableName = "libPods-LernmoTests-RESideMenu.a"
-            BlueprintName = "Pods-LernmoTests-RESideMenu"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

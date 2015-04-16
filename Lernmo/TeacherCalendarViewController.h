@@ -8,6 +8,6 @@
 
 #import "CalendarViewController.h"
 
-@interface TeacherCalendarViewController : CalendarViewController
+@interface TeacherCalendarViewController : UIViewController
 
 @end

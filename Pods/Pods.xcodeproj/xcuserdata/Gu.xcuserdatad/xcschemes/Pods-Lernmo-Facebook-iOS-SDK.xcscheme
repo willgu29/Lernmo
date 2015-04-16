@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B644506282D02367B8FA0D40"
+               BlueprintIdentifier = "6729489C1666C7492920FFB8"
                BuildableName = "libPods-Lernmo-Facebook-iOS-SDK.a"
                BlueprintName = "Pods-Lernmo-Facebook-iOS-SDK"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -39,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B644506282D02367B8FA0D40"
-            BuildableName = "libPods-Lernmo-Facebook-iOS-SDK.a"
-            BlueprintName = "Pods-Lernmo-Facebook-iOS-SDK"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import "NSUserDefaultValues.h"
 #import "TeacherParseValues.h"
-#import "CalendarViewController.h"
+#import "TeacherCalendarViewController.h"
 @interface SettingsViewController ()
 
 //@property (nonatomic, strong) IBOutlet CKCalendarView *calendarView;
@@ -42,8 +42,9 @@
 
 -(IBAction)segueToCalendar:(UIButton *)sender
 {
-    CalendarViewController *calendarVC =[[CalendarViewController alloc] initWithNibName:@"CalendarViewController" bundle:nil];
-    [self presentViewController:calendarVC animated:YES completion:nil];
+    
+    TeacherCalendarViewController *calendarVC =[[TeacherCalendarViewController alloc] initWithNibName:@"TeacherCalendarViewController" bundle:nil];
+    [self.navigationController pushViewController:calendarVC animated:YES];
 }
 
 -(void)setupCalendar
@@ -105,7 +106,7 @@
     if (_teacher)
     {
         NSArray *skills = _teacher[T_SKILLS];
-        NSString * result = [[skills valueForKey:@"description"] componentsJoinedByString:@""];
+        NSString * result = [[skills valueForKey:@"description"] componentsJoinedByString:@" "];
         _textViewSkillsAdded.text = result;
     }
     else //Create Teacher

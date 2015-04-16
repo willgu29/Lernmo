@@ -22,7 +22,7 @@
 
 -(void)setupCalendar
 {
-    CKCalendarView *calendar = [[CKCalendarView alloc] init];
+    CKCalendarView *calendar = [[CKCalendarView alloc] initWithFrame:CGRectMake(0, 80, 320, 400)];
     calendar.delegate = self;
     calendar.dataSource = self;
     [self.view addSubview:calendar];

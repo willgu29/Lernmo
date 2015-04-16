@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lernmo/SettingsViewController.m"
-            timestampString = "450779711.139851"
+            timestampString = "450839766.859393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-textFieldDidBeginEditing:"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Lernmo/SettingsViewController.m"
-            timestampString = "450779699.612452"
+            filePath = "Lernmo/TeacherCalendarViewController.m"
+            timestampString = "450839351.219309"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-segueToCalendar:"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-back:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

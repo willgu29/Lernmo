@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK_ShareKit 0
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK_ShareKit 1
 
+// LayerKit
+#define COCOAPODS_POD_AVAILABLE_LayerKit
+#define COCOAPODS_VERSION_MAJOR_LayerKit 0
+#define COCOAPODS_VERSION_MINOR_LayerKit 11
+#define COCOAPODS_VERSION_PATCH_LayerKit 2
+
 // MBCalendarKit
 #define COCOAPODS_POD_AVAILABLE_MBCalendarKit
 #define COCOAPODS_VERSION_MAJOR_MBCalendarKit 3
